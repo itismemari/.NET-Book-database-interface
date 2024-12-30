@@ -1,0 +1,79 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="final_project.Views.Admin.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <style>
+        *{
+            font-family:poppins;
+        }
+
+        #left{
+            color:white;
+            height:695px;
+            background-color:lightpink;
+        }
+
+        label{
+            color:white;
+        }
+    </style>
+    <link href="../../Assets/lip/css/bootstrap.min.css" rel="stylesheet"/>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-2" id="left">
+                <div style="height:120px">
+                    <div class="col-2">
+                        
+                    </div>
+                    <div class="p-2">
+                     
+<div class="mb-3">
+     <a href="Book.aspx"><img src="../../Assets/images/shopping_cart.png" height="30" width="30" /></a>
+</div>
+
+<div class="mb-3">
+    <img src="../../Assets/images/5078755.png" height="30" width="30"/>
+    <a href="Book.aspx"><label>Books</label></a>
+</div> 
+<div class="mb-3">
+    <img src="../../Assets/images/free-user-profile-icon-4255-thumb.png" height="30" width="30"/>
+    <a href="Auther.aspx"><label>Authors</label></a>
+</div> 
+<div class="mb-3">
+    <img src="../../Assets/images/free-user-profile-icon-4255-thumb.png" height="30" width="30"/>
+    <a href="Seller.aspx"><label>Seller</label></a>
+</div> 
+<div class="mb-3">
+    <img src="../../Assets/images/9710991.png" height="30" width="30"/>
+    <a href="Categories.aspx"><label>Categories</label></a>
+</div> 
+<div class="mb-3">
+    <img src="../../Assets/images/391247.png" height="30" width="30"/>
+    <a href="../Login.aspx" id="logout" onclick="logout_Click" ><label>Logout</label></a>
+</div> 
+
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="col-10">
+                <form id="form1" runat="server">
+                    <div>
+                       <asp:ContentPlaceHolder ID="MyContent" runat="server">
+                       </asp:ContentPlaceHolder>
+                    </div>
+                 </form>
+            </div>
+        </div>
+
+    </div>
+    
+</body>
+</html>
